@@ -7,7 +7,6 @@ class MoneyTest {
 
     @Test
     void TestEURaUSD1 (TipoMoneda euros, TipoMoneda dolares, float cantidad){
-        AssertEs
     }
 
 }
