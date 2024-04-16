@@ -25,6 +25,14 @@ public class Money {
     }
 
     public float change(TipoMoneda origen, TipoMoneda destino, float money){
-        return 1;
+        float cambio = 0;
+        if ((!origen.toString().equals("EUR") && !origen.toString().equals("USD") && !origen.toString().equals("GBP")) ||
+                (!destino.toString().equals("EUR") && !destino.toString().equals("USD") && !destino.toString().equals("GBP"))
+                || money < 0){
+            cambio = -1;
+        } else {
+
+        }
+        return cambio;
     }
 }
