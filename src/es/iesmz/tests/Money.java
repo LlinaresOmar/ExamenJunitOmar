@@ -13,9 +13,7 @@ public class Money {
     final double K_EURaGBP = 0.857839;
     final double K_GBPaEUR = 1.165826;
 
-    public Money(float cantidad, TipoMoneda tipo) {
-        this.cantidad = cantidad;
-        this.tipo = tipo;
+    public Money() {
     }
 
     public float getCantidad() {
@@ -26,7 +24,7 @@ public class Money {
         return tipo;
     }
 
-    public float change(TipoMoneda origen, TipoMoneda destino, float cantidad){
+    public float change(TipoMoneda origen, TipoMoneda destino, float money){
         return 1;
     }
 }
