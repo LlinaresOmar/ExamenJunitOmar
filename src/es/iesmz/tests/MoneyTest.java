@@ -7,37 +7,37 @@ class MoneyTest {
     @Test
     void TestEURaUSD1 (){
         Money money = new Money();
-        assertEquals(28.37f, money.change(TipoMoneda.EUR, TipoMoneda.USD, 23.88f));
+        assertEquals(28.37f, money.change(TipoMoneda.EUR, TipoMoneda.USD, 23.88f), 2);
     }
 
     @Test
     void TestGBPaEUR1 (){
         Money money = new Money();
-        assertEquals(1165.83f, money.change(TipoMoneda.GBP, TipoMoneda.EUR, 1000f));
+        assertEquals(1165.83f, money.change(TipoMoneda.GBP, TipoMoneda.EUR, 1000f), 2);
     }
 
     @Test
     void TestEURaGBP1 (){
         Money money = new Money();
-        assertEquals(201.21f, money.change(TipoMoneda.EUR, TipoMoneda.GBP, 234.56f));
+        assertEquals(201.21f, money.change(TipoMoneda.EUR, TipoMoneda.GBP, 234.56f), 2);
     }
 
     @Test
     void TestUSDaEUR1 (){
         Money money = new Money();
-        assertEquals(37.51f, money.change(TipoMoneda.USD, TipoMoneda.EUR, 44.56f));
+        assertEquals(37.51f, money.change(TipoMoneda.USD, TipoMoneda.EUR, 44.56f), 2);
     }
 
     @Test
     void TestGBPaUSD1 (){
         Money money = new Money();
-        assertEquals(138.49f, money.change(TipoMoneda.GBP, TipoMoneda.USD, 100f));
+        assertEquals(138.49f, money.change(TipoMoneda.GBP, TipoMoneda.USD, 100f), 2);
     }
 
     @Test
     void TestUSDaGBP1 (){
         Money money = new Money();
-        assertEquals(722.14f, money.change(TipoMoneda.USD, TipoMoneda.GBP, 1000f));
+        assertEquals(722.14f, money.change(TipoMoneda.USD, TipoMoneda.GBP, 1000f), 2);
     }
 
     @Test

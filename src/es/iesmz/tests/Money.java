@@ -15,9 +15,7 @@ public class Money {
 
     public float change(TipoMoneda origen, TipoMoneda destino, float money){
         float cambio = 0;
-        if ((!origen.toString().equals("EUR") && !origen.toString().equals("USD") && !origen.toString().equals("GBP")) ||
-                (!destino.toString().equals("EUR") && !destino.toString().equals("USD") && !destino.toString().equals("GBP"))
-                || money < 0){
+        if (!comprobarDatos(origen, destino, money)){
             cambio = -1;
         } else {
             if (origen.toString().equals("EUR")){
@@ -42,4 +40,20 @@ public class Money {
         }
         return cambio;
     }
+
+    private boolean comprobarDatos(TipoMoneda origen, TipoMoneda destino, float money){
+        boolean datosCorrectos = true;
+        if ((!origen.toString().equals("EUR") && !origen.toString().equals("USD") && !origen.toString().equals("GBP")) ||
+                (!destino.toString().equals("EUR") && !destino.toString().equals("USD") && !destino.toString().equals("GBP"))
+                || money < 0){
+            datosCorrectos = false;
+        }
+        return datosCorrectos;
+    }
+
+    private float cambiosEuros(TipoMoneda origen, TipoMoneda destino, float money){
+
+        return 0;
+    }
+
 }
