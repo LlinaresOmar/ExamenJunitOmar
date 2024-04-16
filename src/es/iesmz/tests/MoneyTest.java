@@ -31,7 +31,7 @@ class MoneyTest {
     @Test
     void TestGBPaUSD1 (){
         Money money = new Money();
-        assertEquals(138.49f, money.change(TipoMoneda.GBP, TipoMoneda.USD, 234.56f));
+        assertEquals(138.49f, money.change(TipoMoneda.GBP, TipoMoneda.USD, 100f));
     }
 
     @Test
