@@ -2,9 +2,6 @@ package es.iesmz.tests;
 
 public class Money {
 
-    //Atributos
-    private float cantidad;
-    private TipoMoneda tipo;
 
     //Tipos de cambio
     final float K_EURaUSD = 1.18798f;
@@ -14,14 +11,6 @@ public class Money {
     final float K_GBPaEUR = 1.165826f;
 
     public Money() {
-    }
-
-    public float getCantidad() {
-        return cantidad;
-    }
-
-    public TipoMoneda getTipo() {
-        return tipo;
     }
 
     public float change(TipoMoneda origen, TipoMoneda destino, float money){
